@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page Generator</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>Front Page Generator</h3>
+    <p>Enter your details and to get front page generated for your required subject(s).
+    </p><br>
+    <form id = "StudentForm">
+        <label for="Department">Select your Department : </label>
+        <select id="Department" name="department" required>
+            <option value="Artificial Intelligence and Data Science">AIDS</option>
+            <option value="Information Technology" selected>IT</option>
+            <option value="Computer Science Engineering">CSE</option>
+            <option value="Electronics and Communication Engineering">ECE</option>
+            <option value="Electrical and Electronics Engineering">EEE</option>
+            <option value="Mechanical Engineering">MECH</option>
+            <option value="Civil Engineering">CIVIL</option>
+        </select>
+        <br>
+        <label for="PageType">Select your Front Page : </label>
+        <select id="PageType" required>
+            <option value="Experiment" selected>Experiment Page</option>
+            <option value="Assignment">Assignment Page</option>
+            <option value="Tutorial">Tutorial Page</option>
+        </select>
+        <br>
+        <label for="Number">Select Exp/Assign/Tut No. : </label>
+        <input type="number" id="Number" min="1" max="50" placeholder="1">
+        <br>
+        <label for="Name">Enter your Full Name : </label>
+        <input type="text" id="Name" placeholder="First Middle Last" required>
+        <br>
+        <label for="Class">Enter your Class : </label>
+        <select id="Class" required>
+            <option value="FE">1st Year</option>
+            <option value="SE" selected>2nd Year</option>
+            <option value="TE">3rd Year</option>
+            <option value="BE">4th Year</option>
+        </select>
+        <br>
+        <label for="Div">Enter your Div : </label>
+        <input type="text" id="Div" placeholder="A" maxlength="1" pattern="[A-Z]">
+        <br>
+        <label for="RollNo">Enter your Roll No. : </label>
+        <input type="number" id="RollNo" placeholder="42" min="1" max="300">
+        <br>
+        <div id="SubjectContainer">
+            <label for="Subject">Enter your Subject Name : </label>
+            <select id="Subject" required>
+                <option value="IP Lab">IP</option>
+                <option value="SQL Lab">SQL</option>
+                <option value="Algorithm Lab">Algorithm</option>
+                <option value="OOP with Java Lab">Java</option>
+                <option value="OE - Personal Finance Management">PFM</option>
+                <option value="Enterprise Development">ED</option>
+            </select>
+            <input type="text" id="SubjectInput" placeholder="Enter Subject Name : " hidden>
+            </div>
+        <label for="DatePerform">Enter Date of Performance : </label>
+        <input type="Date" id="DatePerform">
+        <br>
+        <label for="DateSubmit">Enter Date of Submission : </label>
+        <input type="Date" id="DateSubmit">
+        <br>
+    </form>
+</body>
+</html>
